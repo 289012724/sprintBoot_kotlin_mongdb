@@ -8,4 +8,4 @@ springboot kotlin mongodb 整合
    error:
       Error:Maven Resources Compiler: Maven project configuration required for module 'user-web' isn't available. Compilation of Maven   projects is supported only if external build is started from an IDE. 
 
-find pom.xml , right click , choose ->Add as maven build file
+you should find pom.xml , right click , choose ->Add as maven build file
