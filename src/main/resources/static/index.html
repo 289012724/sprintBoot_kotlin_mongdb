@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Title</title>
+<link rel="stylesheet" href="webix.css" type="text/css"/>
+<script src="jquery-3.2.1.js"></script>
+<script typet="text/javascript" src="Underscore18.3.js"></script>
+<script src="webix_debug.js"></script>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+</style>
+<body>
+<div id="root"></div>
+
+<script type="text/javascript" src="main.js"></script>
+<script>
+    $(window).bind("load resize",function () {
+        $("#root").attr({"scroll":"none","overflow":"hidden"});
+        var node = $("#root")[0].childNodes[0];
+        var id = node.attributes["view_id"].value;
+        $$(id).define("height",window.innerHeight);
+        $$(id).define("width",window.innerWidth);
+        $$(id).adjust();
+    });
+</script>
+
+</body>
+</html>
